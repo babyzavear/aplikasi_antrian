@@ -18,9 +18,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
                 // ambil data hasil query
                 while ($row = mysqli_fetch_assoc($query)) {
                     $data['code_antrian'] = $row["code_antrian"];
-                    $data['loket'] = $row["loket"];
-
-                    $data['jumlah']     = $row["jumlah"];
+                    $data['jumlah'] = $row["jumlah"];
 
                     array_push($dataJmlAntrian, $data);
                 }
